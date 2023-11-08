@@ -7,7 +7,7 @@ terraform {
   }
    backend "s3" {
       bucket = "pgr301-2021-terraform-state"
-      key    = "mada060/s3-bucket.state"
+      key    = "shopifly-mada/s3-bucket.state"
       region = "eu-north-1"
    }
 
