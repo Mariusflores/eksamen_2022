@@ -406,7 +406,8 @@ De kommenterte derfor bare ut S3 bucket koden, og gikk videre til neste oppgave.
 
 Se på ```provider.tf filen```. 
 
-* Forklar med egne ord. Hva er årsaken til dette problemet? Hvorfor forsøker Terraform å opprette en bucket, når den allerede eksisterer? 
+* Forklar med egne ord. Hva er årsaken til dette problemet? Hvorfor forsøker Terraform å opprette en bucket, når den allerede eksisterer?
+  (Den har ikke backend)
 * Gjør nødvendige Endre slik denne slik at Terraform kan kjøres flere ganger uten å forsøke å opprette ressurser hver gang den kjører.
 * Fjern kommentarene fra ```databacket.tf``` slik at Terraform-koden  også lager en S3 bucket. 
 
