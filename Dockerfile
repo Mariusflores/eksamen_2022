@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk8 as builder
+FROM maven:3.8.4-openjdk-8 as builder
 
 WORKDIR /app
 COPY pom.xml .
