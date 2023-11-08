@@ -1,10 +1,10 @@
-FROM maven:3.8.4-openjdk-8 as builder
+FROM maven:3.8.4-openjdk-1 as builder
 
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
 RUN mvn package
 
-FROM adoptopenjdk/openjdk8
+FROM adoptopenjdk/openjdk11:alpine-slim
 COPY --from=builder /app/target/*.jar /app/application.jar
 ENTRYPOINT ["java","-jar","/app/application.jar"] 
